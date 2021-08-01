@@ -1,5 +1,5 @@
 # 收款二维码合并
-来着https://github.com/senventise
+源码来自https://github.com/senventise
 ## 原理
 扫描二维码后跳转到此页面，然后根据 UA 判断具体平台。  
 支付宝为:AlipayClient  

@@ -5,5 +5,5 @@ qqBrowser = "MQQBrowser"
 userAgent = navigator.userAgent;
 
 if (userAgent.indexOf(wechat)==-1 && userAgent.indexOf(alipay)==-1 && userAgent.indexOf(qqBrowser)==-1){
-  window.location.href = "/index.html"
+  window.location.href = "https://qr.alipay.com/tsx17205e4q2nianuoo6ecc"
 }

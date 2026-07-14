@@ -119,16 +119,16 @@ function generateChapterPages(chapters, indexTemplate, chapterTemplate) {
     const prev = i > 0 ? chapters[i - 1] : null;
     const next = i < total - 1 ? chapters[i + 1] : null;
     
-    // 构建上一章/下一章导航
+    // 构建上一章/下一章导航（章节页位于 chapter/ 子目录，链接需相对当前目录）
     let navHtml = '<div class="chapter-nav">';
     if (prev) {
-      navHtml += `<a class="btn-prev" href="chapter/${prev.slug}.html">← 上一章：${prev.chapterTitle}</a>`;
+      navHtml += `<a class="btn-prev" href="./${prev.slug}.html">← 上一章：${prev.chapterTitle}</a>`;
     } else {
       navHtml += `<span class="btn-disabled">← 上一章</span>`;
     }
-    navHtml += `<a class="btn-catalog" href="index.html">目录</a>`;
+    navHtml += `<a class="btn-catalog" href="../index.html">目录</a>`;
     if (next) {
-      navHtml += `<a class="btn-next" href="chapter/${next.slug}.html">下一章：${next.chapterTitle} →</a>`;
+      navHtml += `<a class="btn-next" href="./${next.slug}.html">下一章：${next.chapterTitle} →</a>`;
     } else {
       navHtml += `<span class="btn-disabled">下一章 →</span>`;
     }

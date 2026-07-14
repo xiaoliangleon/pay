@@ -1,0 +1,13 @@
+{
+  "name": "上古引力阅读站",
+  "version": "1.0.0",
+  "description": "《上古引力》个人小说阅读站",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "npx serve ."
+  },
+  "dependencies": {
+    "marked": "^12.0.0"
+  },
+  "devDependencies": {}
+}

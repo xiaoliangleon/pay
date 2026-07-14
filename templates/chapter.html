@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{CHAPTER_TITLE}} - {{SITE_TITLE}}</title>
+  <meta name="description" content="{{SITE_TITLE}} - {{CHAPTER_TITLE}}">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="reader-page" data-chapter="{{CHAPTER_ID}}" data-prev="{{PREV_SLUG}}" data-next="{{NEXT_SLUG}}">
+  <header class="site-header reader-header">
+    <div class="container">
+      <a href="../index.html" class="site-logo">{{SITE_TITLE}}</a>
+      <nav class="site-nav">
+        <a href="../index.html">目录</a>
+        <select id="chapterJumpSelect" class="chapter-jump-select" aria-label="跳转章节">
+          <option value="" disabled>跳转章节</option>
+        </select>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reader-toolbar">
+    <div class="container">
+      {{CHAPTER_NAV}}
+    </div>
+  </div>
+
+  <main class="container reader-container">
+    <article class="chapter-content">
+      <h1 class="chapter-title">{{CHAPTER_TITLE}}</h1>
+      <div class="chapter-body">
+        {{CHAPTER_CONTENT}}
+      </div>
+    </article>
+  </main>
+
+  <div class="reader-toolbar bottom">
+    <div class="container">
+      {{CHAPTER_NAV}}
+    </div>
+  </div>
+
+  <div class="floating-actions">
+    <button id="backToTop" class="fab" title="回到顶部">↑</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>《{{SITE_TITLE}}》个人阅读站 · Powered by IGA Pages</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

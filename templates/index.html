@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{SITE_TITLE}} - {{SITE_SUBTITLE}}</title>
+  <meta name="description" content="{{SITE_DESCRIPTION}}">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">{{SITE_TITLE}}</a>
+      <nav class="site-nav">
+        <a href="index.html">目录</a>
+        <a href="chapter/001.html">开始阅读</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 class="novel-title">{{SITE_TITLE}}</h1>
+      <p class="novel-subtitle">{{SITE_SUBTITLE}}</p>
+      <div class="novel-meta">
+        <span>作者：{{SITE_AUTHOR}}</span>
+        <span>已更新：{{CURRENT_CHAPTERS}} / {{TOTAL_CHAPTERS}} 章</span>
+      </div>
+      <div class="novel-tags">{{SITE_TAGS}}</div>
+      <div class="hero-intro">
+        <img src="assets/images/cover.jpg" alt="《{{SITE_TITLE}}》封面" class="novel-cover">
+        <p class="novel-desc">{{SITE_DESCRIPTION}}</p>
+      </div>
+      <div class="hero-actions">
+        <a href="chapter/001.html" class="btn-primary">开始阅读</a>
+        <a href="#catalog" class="btn-secondary">查看目录</a>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+      <h2>章节目录</h2>
+      <ul class="chapter-list">
+        {{CHAPTER_LIST}}
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>《{{SITE_TITLE}}》个人阅读站 ·  Powered by IGA Pages</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -23,8 +23,3 @@
 选择 Settings --> GitHub Pages 设置为 Github Pages  
 **如果没有通过 ICP 备案的域名建议不要使用自定义域名，会被微信拦截**  
 设置成功后得到链接，使用链接生成二维码即可。   
-
-
-欢迎 pr 或 issue.   
-
-__弃坑__ 
